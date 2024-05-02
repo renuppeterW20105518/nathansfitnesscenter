@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "924854133111",
+    "project_id": "nathansfitnesscenter",
+    "storage_bucket": "nathansfitnesscenter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924854133111:android:69655ecdd5b1fe1cfd8172",
+        "android_client_info": {
+          "package_name": "ie.setu.nathansfitnesscenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924854133111-sj9pnkq581pddc720b65id5nbuv0nh0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.setu.nathansfitnesscenter",
+            "certificate_hash": "f1e1c87fa3d703e0a5f6277256084824fea13cc4"
+          }
+        },
+        {
+          "client_id": "924854133111-ltm2ed9l2les50hv9qu5u5vvkt1f5k84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgEYaup4slQjxidZQQSXrqSflcPU6qsvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924854133111-ltm2ed9l2les50hv9qu5u5vvkt1f5k84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
