@@ -17,7 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             // Start main activity after timeout
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MenuActivity::class.java))
             finish()
         }, splashTimeOut)
     }

@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation("androidx.core:core-splashscreen:1.0.0")
     implementation("com.google.android.gms:play-services-auth:19.0.0")
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
