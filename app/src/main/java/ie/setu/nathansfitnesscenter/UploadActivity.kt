@@ -38,12 +38,9 @@ class UploadActivity : AppCompatActivity() {
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@UploadActivity, MenuActivity::class.java)
                 startActivity(intent)
-                finish()
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
             }
         }
-
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 }

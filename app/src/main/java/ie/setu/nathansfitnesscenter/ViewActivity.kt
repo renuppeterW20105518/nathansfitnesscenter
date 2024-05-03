@@ -27,8 +27,6 @@ class ViewActivity : AppCompatActivity() {
                 Toast.makeText(this,"PLease enter the contact number",Toast.LENGTH_SHORT).show()
             }
         }
-
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun readData(contactNumber : String){

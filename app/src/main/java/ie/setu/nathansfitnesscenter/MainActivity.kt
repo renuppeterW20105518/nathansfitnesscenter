@@ -15,11 +15,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.GoogleAuthProvider
+import ie.setu.nathansfitnesscenter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth : FirebaseAuth
     private lateinit var googleSignInClient : GoogleSignInClient
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +39,14 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.materialButton).setOnClickListener {
             signInGoogle()
+        }
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.nathansSignInButton.setOnClickListener{
+            val intent = Intent(this@MainActivity,MenuActivity::class.java)
+            startActivity(intent)
         }
     }
 

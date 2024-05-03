@@ -27,8 +27,6 @@ class DeleteActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter the contact number", Toast.LENGTH_SHORT).show()
             }
         }
-
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun deleteDate(contactNumber: String) {

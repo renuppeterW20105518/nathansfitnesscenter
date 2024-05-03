@@ -28,8 +28,6 @@ class UpdateActivity : AppCompatActivity() {
 
             updateData(referContactNumber, updateTraineeName, updateEirCode, updateGardianName)
         }
-
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun updateData(contactNumber: String, traineeName: String, eirCode: String, gardianName: String) {

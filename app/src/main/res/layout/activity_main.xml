@@ -1,54 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
+    android:background="@drawable/menu_image"
     tools:context=".MainActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="Sign In"
-        android:textColor="@color/orange"
-        android:textStyle="bold"
-        app:backgroundTint="@color/white"
-        app:icon="@drawable/google_logo"
-        app:iconGravity="start"
-        app:iconPadding="4dp"
-        app:iconSize="20dp"
-        app:iconTint="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nathans Fitness Center"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/nathansSignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/orange"
+            android:text="Nathan's Sign In"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/materialButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/google_logo" />
+        <Button
+            android:id="@+id/materialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="28dp"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange"
+            app:icon="@drawable/google_logo"
+            app:iconGravity="start"
+            app:iconPadding="4dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>
